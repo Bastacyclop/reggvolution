@@ -26,12 +26,15 @@ define_language! {
     Var(Index),
     "app" = App([Id; 2]),
     "lam" = Lambda(Id),
+    "typeOf" = TypeOf([Id; 2]),
 
     // to implement explicit substitution:
     // "sig" = Sigma([Id; 3]),
     // "phi" = Phi([Id; 3]),
 
-    Number(i32),
+    Integer(i32),
+    // Float(f32),
+    // Double(f64),
     Symbol(Symbol),
   }
 }
